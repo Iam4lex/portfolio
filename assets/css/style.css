@@ -101,7 +101,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .logo{
@@ -786,7 +786,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("https://i.pinimg.com/564x/3b/4c/41/3b4c41b14d5de925305457608a728d51.jpg") no-repeat;
+  background: url("https://i.pinimg.com/564x/76/5f/8c/765f8ce020cfe01a6bca659f96f39e74.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
