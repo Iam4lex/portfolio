@@ -788,6 +788,8 @@ section {
 
 .services .icon-box:hover {
   border-color: var(--secondary-color);
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 10px #292828;
 }
 
 .services .icon-box:hover .title a {
