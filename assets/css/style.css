@@ -725,6 +725,19 @@ section {
   border: 2px solid #82909c;
 }
 
+.col-lg-6 .btn button[type=submit] {
+  background: var(--secondary-color);
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.col-lg-6 .btn button[type=submit] a{
+  z-index: 999;
+}
+
 /*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
@@ -1041,12 +1054,7 @@ section {
   padding: 0;
 }
 
-.row .text-center{
-  position: ;
-  background: green;
-  width: 100%;
-  height: 100%;
-}
+
 
 /*--------------------------------------------------------------
 # Pricing
