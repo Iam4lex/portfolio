@@ -1,11 +1,3 @@
-/**
-* Template Name: Laura
-* Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -13,6 +5,13 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 :root{
   --primary-color: #fff;
@@ -343,7 +342,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -367,15 +366,22 @@ h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: "Satisfy", serif;
   color: #fff;
   font-weight: 400;
+  font-family: sans-serif;
+  font-family: "Alkatra", system-ui;
+  font-optical-sizing: auto;
 }
+
+#hero h1 span{
+  color: var(--secondary-color);
+}
+
 
 #hero h2 {
   color: #eee;
   margin-bottom: 50px;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
