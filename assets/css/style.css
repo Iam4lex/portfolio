@@ -991,6 +991,7 @@ section {
 
 .portfolio .portfolio-item:hover .portfolio-img img {
   transform: scale(1.2);
+  filter: grayscale(100%);
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
