@@ -628,7 +628,7 @@ section {
 }
 
 .about .image {
-  background: url("../img/me.jpeg") center center no-repeat;
+  background: url("../img/my\ pic.jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
   border-radius: 4px;
