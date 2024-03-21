@@ -807,7 +807,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("https://i.pinimg.com/564x/76/5f/8c/765f8ce020cfe01a6bca659f96f39e74.jpg") no-repeat;
+  background: url("/assets/img/1.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
