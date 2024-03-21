@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
 
   <title>Alex : Personal Portfolio Website</title>
   <meta content="" name="description">
@@ -23,6 +24,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -618,7 +620,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="post" role="form" class="php-email-form" id="contactForm">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -634,8 +636,6 @@
                 <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
@@ -683,6 +683,46 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- sending imail from js -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('#contactForm').submit(function(e) {
+        e.preventDefault();
+        var formData = $(this).serialize();
+        console.log(formData);
+        sendEmail(formData);
+      });
+    });
+
+    function sendEmail(formData) {
+      let postData = {
+        "From": "alexmungai22@student.kibu.ac.ke",
+        "To": "alexmungai22@student.kibu.ac.ke",
+        "Subject": formData.subject,
+        "HtmlBody": "<strong>Hello</strong> dear Postmark user.",
+        "MessageStream": "my-mails"
+      };
+      $.ajax({
+        type: 'POST',
+        url: 'https://api.postmarkapp.com/email',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'X-Postmark-Server-Token': '0cfec66b-7b32-4a96-ac71-4244f6db4691'
+        },
+        data: postData,
+        success: function(response) {
+          $('#response').text('Email sent successfully.');
+        },
+        error: function(xhr, status, error) {
+          $('#response').text('Error sending email: ' + error);
+        }
+      });
+    }
+  </script>
 
 </body>
 
