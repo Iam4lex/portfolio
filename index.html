@@ -75,7 +75,7 @@
   <section id="hero" >
     <div class="hero-container">
       <h1 style="text-align: center;"><span>Pentester,</span> Web Developer & <br> Designer.</h1>
-      <div class="text-center btn"><a href="#"><button type="submit" onclick="myFunction()">Let's Chat on WhatsApp&rarr;</button></a></div>
+      <div class="text-center btn"><button type="submit" onclick="myFunction()">Let's Chat on WhatsApp&rarr;</button></div>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -684,6 +684,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    sendEmail
+  </script>
 
   <!-- sending imail from js -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -728,7 +731,7 @@
 <!-- WhatsApp Fucntion -->
   <script>
     function myFunction() {
-        var phoneNumber = '0794555400';
+        var phoneNumber = '+254794555400';
         var message = encodeURIComponent('Hello, how are you Alex?');
         var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + message;
         window.open(whatsappLink, '_blank');

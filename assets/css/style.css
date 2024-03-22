@@ -408,6 +408,7 @@ h6 {
   color: #fff;
   transition: 0.4s;
   border-radius: 5px;
+  margin: 2rem auto 4rem;
 }
 
 @media (min-width: 1024px) {
