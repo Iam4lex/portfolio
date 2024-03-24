@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    background-color: #ccc;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #4CAF50; /* Green */
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-icon {
+    transform: translateX(24px);
+}
