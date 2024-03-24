@@ -14,10 +14,15 @@ body {
 
 
 :root{
+  /* Dark mode  */
   --primary-color: #fff;
-  --secondary-color: green;
+  --darkgrey-color: #121212;
+
+  /* Light mode  */
+  --secondary-color: #19DE51;
   --bg-color: #e6e8eb;
   --text-color: #333;
+  --resume-bg: #eef0f2;
 }
 
 a {
@@ -347,7 +352,7 @@ body {
   background-color: var(--secondary-color);
   padding: 5px;
   border-radius: 50%;
-  right: 40px;
+  right: 20px;
   position: fixed;
   z-index: 999;
 }
@@ -394,10 +399,6 @@ body {
   font-family: sans-serif;
   font-family: "Alkatra", system-ui;
   font-optical-sizing: auto;
-}
-
-#hero h1 span{
-  color: var(--secondary-color);
 }
 
 
@@ -724,6 +725,9 @@ section {
 /*--------------------------------------------------------------
 # My Resume
 --------------------------------------------------------------*/
+#resume{
+  background-color: var(--primary-color);
+}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -750,7 +754,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #eef0f2;
+  background: var(--resume-bg);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -777,7 +781,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: var(--primary-color);
+  background: var(--resume-bg);
   border: 2px solid #82909c;
 }
 
@@ -1203,7 +1207,7 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #ffc85a;
+  background: #1cc253;
 }
 
 .pricing .featured h3 {
@@ -1283,23 +1287,6 @@ section {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 27px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: var(--primary-color);
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
 }
 
 .contact .php-email-form .error-message br+br {
