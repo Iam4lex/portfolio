@@ -19,7 +19,7 @@ body {
   --darkgrey-color: #121212;
 
   /* Light mode  */
-  --secondary-color: #19DE51;
+  --secondary-color: greenyellow;
   --bg-color: #e6e8eb;
   --text-color: #333;
   --resume-bg: #eef0f2;
@@ -602,10 +602,15 @@ section {
 /*--------------------------------------------------------------
 # About Me
 --------------------------------------------------------------*/
+#about{
+  background-color: #151D2B;
+  color: #c0c0c0;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #3b434a;
+  color: #c0c0c0;
   text-transform: uppercase;
 }
 
@@ -652,7 +657,7 @@ section {
   line-height: 30px;
   display: block;
   font-weight: 700;
-  color: #3b434a;
+  color: #c0c0c0;
   margin-left: 50px;
 }
 
@@ -1326,6 +1331,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  resize: none;
 }
 
 .contact .php-email-form input::focus,

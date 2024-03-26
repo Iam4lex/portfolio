@@ -1,54 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dark Mode Light Mode Toggle</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<style>
-  :root {
-    --bg-color: #f5f5f5; /* Default light mode background color */
-    --text-color: #333; /* Default light mode text color */
-  }
-
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .toggle-btn {
-    cursor: pointer;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #151D2B;
+        }
+        h1{
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: greenyellow;
+            font-family: sans-serif;
+            padding: 20px 50px;
+            background: #1a2538;
+            text-align: center;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-<i id="mode-toggle" class="toggle-btn fas fa-moon"></i>
-<script>
-    const modeToggle = document.getElementById('mode-toggle');
-
-    modeToggle.addEventListener('click', function() {
-        const isDarkMode = document.body.classList.toggle('dark-mode');
-        modeToggle.className = isDarkMode ? 'toggle-btn fas fa-sun' : 'toggle-btn fas fa-moon';
-        if (isDarkMode) {
-        document.documentElement.style.setProperty('--bg-color', '#333');
-        document.documentElement.style.setProperty('--text-color', '#fff');
-        } else {
-        document.documentElement.style.setProperty('--bg-color', '#f5f5f5');
-        document.documentElement.style.setProperty('--text-color', '#333');
-        }
-    });
-    
-</script>
+    <h1>Hello Pen Testers! Wanna Hack ?</h1>
 </body>
 </html>
