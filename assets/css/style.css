@@ -283,7 +283,7 @@ body {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: var(--primary-color);
+  background-color: var(--bg--color);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -292,7 +292,7 @@ body {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 14px;
-  color: #3b434a;
+  color: var(--primary-color);
 }
 
 .navbar-mobile a:hover,
@@ -1262,23 +1262,23 @@ section {
 }
 
 .contact .info-box {
-  color: #444444;
+  color: var(--text-color);
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
+  background: var(--box-color);
 }
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: var(--secondary-color);
+  color: var(--text-color);
   border-radius: 50%;
   padding: 15px;
-  background: #fff6e4;
+  background: var(--box-color);
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: var(--text-color);
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1310,13 +1310,13 @@ section {
 
 .contact .social-links a:hover {
   color: var(--primary-color);
-  border-color: var(--secondary-color);
-  background: var(--secondary-color);
+  border-color: var(--sky-blue);
+  background: var(--sky-blue);
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 27px;
+  background-color: var(--box-color);
 }
 
 .contact .php-email-form .error-message br+br {
@@ -1357,6 +1357,7 @@ section {
   box-shadow: none;
   font-size: 14px;
   resize: none;
+  color: var(--primary-color);
 }
 
 .contact .php-email-form input::focus,
@@ -1366,17 +1367,27 @@ section {
 
 .contact .php-email-form input {
   padding: 10px 15px;
+  background: transparent;
+}
+
+.contact .php-email-form input::placeholder{
+  color: var(--text-color);
 }
 
 .contact .php-email-form textarea {
   padding: 12px 15px;
+  background: transparent;
+}
+
+.contact .php-email-form textarea::placeholder{
+  color: var(--text-color);
 }
 
 .contact .php-email-form button[type=submit] {
   background: var(--secondary-color);
   border: 0;
   padding: 10px 24px;
-  color: var(--primary-color);
+  color: var(--dark-color);
   transition: 0.4s;
   border-radius: 5px;
 }
@@ -1446,7 +1457,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--secondary-color);
+  background: var(--sky-blue);
   color: var(--primary-color);
   line-height: 1;
   padding: 8px 0;

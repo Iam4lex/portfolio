@@ -247,7 +247,6 @@
 
 })()
 
-
 const titles = ["Web Developer", "Web Designer", "Cyber Security Enthusiast"];
 const typingSpeed = 100; // in milliseconds
 let titleIndex = 0;
