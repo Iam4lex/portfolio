@@ -14,15 +14,15 @@ body {
 
 
 :root{
-  /* Dark mode  */
+  --sky-blue: #2cbdee;
   --primary-color: #fff;
-  --darkgrey-color: #121212;
-
-  /* Light mode  */
+  --dark-color: #000000;
   --secondary-color: greenyellow;
   --bg-color: #e6e8eb;
-  --text-color: #333;
-  --resume-bg: #eef0f2;
+  --text-color: #cac0c0;
+  --bg--color: #141b27;
+  --span--color: #3b434a;
+  --box-color: #1c2330;
 }
 
 a {
@@ -340,22 +340,6 @@ body {
   display: block;
 }
 
-/*--------------------------------------------------------------
- Dack mode icon 
---------------------------------------------------------------*/
-.toggle-btn {
-  cursor: pointer;
-  font-size: 24px;
-  position: absolute;
-  margin-top: 10px;
-  color: #3b434a;
-  background-color: var(--secondary-color);
-  padding: 5px;
-  border-radius: 50%;
-  right: 20px;
-  position: fixed;
-  z-index: 999;
-}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -363,14 +347,14 @@ body {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpeg") top right;
+  background: url("../img/1.gif") top right;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(33, 36, 46, 0.89);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -391,7 +375,7 @@ body {
   padding: 0 15px;
 }
 
-#hero h1 {
+#hero #typing-text {
   margin: 0 0 10px 0;
   font-size: 64px;
   color: var(--primary-color);
@@ -401,6 +385,17 @@ body {
   font-optical-sizing: auto;
 }
 
+@media screen and (max-width:560px) {
+  #hero #typing-text {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-family: sans-serif;
+    font-family: "Alkatra", system-ui;
+    font-optical-sizing: auto;
+  }
+}
 
 #hero h2 {
   color: #eee;
@@ -597,8 +592,8 @@ section {
 # About Me
 --------------------------------------------------------------*/
 #about{
-  background-color: #151D2B;
-  color: #c0c0c0;
+  background-color: var(--bg--color);
+  color: var(--text-color);
 }
 
 .about .content h3 {
@@ -678,10 +673,20 @@ section {
 }
 
 .about .image {
-  background: url("../img/my\ pic.jpg") center center no-repeat;
+  background: url("../img/My\ Image.jpeg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 560px) {
+  .about .image {
+    background: url("../img/my\ pic.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    border-radius: 4px;
+  }
+
 }
 
 .about .skills-content {
@@ -718,27 +723,37 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--secondary-color);
+  background-color: var(--sky-blue);
 }
 
 /*--------------------------------------------------------------
 # My Resume
 --------------------------------------------------------------*/
 #resume{
-  background-color: var(--primary-color);
+  background-color: var(--bg--color);
+  color: var(--text-color);
 }
+
+.section-title span{
+  color: var(--span--color);
+}
+
+.section-title h2{
+  color: var(--primary-color);
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #3b434a;
+  color: var(--text-color);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #82909c;
+  border-left: 2px solid greenyellow;
   position: relative;
 }
 
@@ -788,27 +803,39 @@ section {
   background: var(--secondary-color);
   border: 0;
   padding: 10px 24px;
-  color: var(--primary-color);
+  color: var(--dark-color);
   transition: 0.4s;
   border-radius: 5px;
+
 }
 
 .col-lg-6 .btn button[type=submit] a{
   z-index: 999;
+  color: var(--dark-color);
 }
 
 /*--------------------------------------------------------------
 # My Services
 --------------------------------------------------------------*/
+#services{
+  background: var(--bg--color);
+  color: var(--text-color);
+}
+
 .services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: var(--primary-color);
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  background: var(--box-color);
   transition: all 0.3s ease-in-out;
   text-align: center;
-  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.services .icon-box:hover{
+  transform: scale(1.1);
+  border: 1px solid var(--sky-blue);
+  cursor: pointer;
 }
 
 .services .icon {
@@ -819,7 +846,7 @@ section {
   border-radius: 50%;
   width: 72px;
   height: 72px;
-  background: #fff4df;
+  background: var(--bg--color);
 }
 
 .services .icon i {
@@ -835,7 +862,7 @@ section {
 }
 
 .services .title a {
-  color: #111;
+  color: var(--sky-blue);
   transition: 0.3s;
 }
 
@@ -845,22 +872,12 @@ section {
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
-  border-color: var(--secondary-color);
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: 3px 3px 10px #292828;
-}
-
-.services .icon-box:hover .title a {
-  color: var(--secondary-color);
-}
-
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("https://i.pinimg.com/564x/54/17/55/5417557917233f3216fcffb84a8a0e10.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/1.gif") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -960,6 +977,11 @@ section {
 /*--------------------------------------------------------------
 # My Portfolio
 --------------------------------------------------------------*/
+#portfolio{
+  background: var(--bg--color);
+  color: var(--text-color);
+}
+
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -974,7 +996,7 @@ section {
   line-height: 1;
   padding: 7px 10px;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--primary-color);
   transition: all 0.3s ease-in-out;
   border: 2px solid var(--primary-color);
 }
@@ -1120,11 +1142,15 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+#pricing{
+  background: var(--bg--color);
+  color: var(--text-color);
+}
+
 .pricing .box {
   padding: 20px;
-  background: var(--primary-color);
+  background: var(--box-color);
   text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1136,13 +1162,13 @@ section {
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
+  color: var(--secondary-color);
+  background: var(--box-color);
 }
 
 .pricing h4 {
   font-size: 36px;
-  color: var(--secondary-color);
+  color: var(--sky-blue);
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -1155,7 +1181,7 @@ section {
 }
 
 .pricing h4 span {
-  color: #bababa;
+  color: var(--sky-blue);
   font-size: 16px;
   font-weight: 300;
 }
@@ -1163,7 +1189,7 @@ section {
 .pricing ul {
   padding: 0;
   list-style: none;
-  color: #444444;
+  color: var(--text-color);
   text-align: center;
   line-height: 20px;
   font-size: 14px;
@@ -1187,7 +1213,7 @@ section {
 .pricing .btn-wrap {
   margin: 20px -20px -20px -20px;
   padding: 20px 15px;
-  background: #f8f8f8;
+  background: var(--box-color);
   text-align: center;
 }
 
@@ -1196,7 +1222,7 @@ section {
   display: inline-block;
   padding: 8px 35px;
   border-radius: 4px;
-  color: var(--primary-color);
+  color: var(--dark-color);
   transition: none;
   font-size: 14px;
   font-weight: 400;
@@ -1210,7 +1236,7 @@ section {
 }
 
 .pricing .featured h3 {
-  color: var(--primary-color);
+  color: var(--dark-color);
   background: var(--secondary-color);
 }
 
@@ -1224,12 +1250,17 @@ section {
   font-size: 14px;
   padding: 1px 0 3px 0;
   background: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 /*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
+#contact{
+  background: var(--bg--color);
+  color: var(--text-color);
+}
+
 .contact .info-box {
   color: #444444;
   text-align: center;

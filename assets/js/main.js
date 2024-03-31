@@ -246,3 +246,48 @@
   new PureCounter();
 
 })()
+
+
+const titles = ["Web Developer", "Web Designer", "Cyber Security Enthusiast"];
+const typingSpeed = 100; // in milliseconds
+let titleIndex = 0;
+let letterIndex = 0;
+
+const typingInterval = setInterval(() => {
+    document.getElementById("typing-text").textContent += titles[titleIndex][letterIndex];
+    letterIndex++;
+    if (letterIndex === titles[titleIndex].length) {
+        clearInterval(typingInterval);
+        setTimeout(() => {
+            eraseTitle();
+        }, 1000); // Delay before erasing title
+    }
+}, typingSpeed);
+
+function eraseTitle() {
+    const eraseInterval = setInterval(() => {
+        let currentText = document.getElementById("typing-text").textContent;
+        document.getElementById("typing-text").textContent = currentText.slice(0, -1);
+        if (currentText.length === 0) {
+            clearInterval(eraseInterval);
+            titleIndex = (titleIndex + 1) % titles.length;
+            setTimeout(() => {
+                typeTitle();
+            }, 500); // Delay before typing next title
+        }
+    }, typingSpeed);
+}
+
+function typeTitle() {
+    letterIndex = 0;
+    const typingInterval = setInterval(() => {
+        document.getElementById("typing-text").textContent += titles[titleIndex][letterIndex];
+        letterIndex++;
+        if (letterIndex === titles[titleIndex].length) {
+            clearInterval(typingInterval);
+            setTimeout(() => {
+                eraseTitle();
+            }, 1000); // Delay before erasing title
+        }
+    }, typingSpeed);
+}
