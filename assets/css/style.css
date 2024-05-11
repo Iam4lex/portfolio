@@ -46,6 +46,7 @@ h6 {
 
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -114,10 +115,10 @@ body {
   padding: 0 2rem;
 }
 
-.logo h1{
+.logo{
   color: var(--primary-color);
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .logo span{
@@ -254,10 +255,6 @@ body {
   .navbar ul {
     display: none;
   }
-
-  .logo{
-    margin-left: -20px;
-  }
 }
 
 .navbar-mobile {
@@ -275,7 +272,7 @@ body {
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
-  right: 10px;
+  right: 15px;
 }
 
 .navbar-mobile ul {
@@ -344,6 +341,7 @@ body {
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -382,7 +380,7 @@ body {
   margin: 0 0 10px 0;
   font-size: 64px;
   color: var(--primary-color);
-  font-weight: 600;
+  font-weight: 400;
   font-family: sans-serif;
   font-family: "Alkatra", system-ui;
   font-optical-sizing: auto;
@@ -393,7 +391,7 @@ body {
     margin: 0 0 10px 0;
     font-size: 24px;
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 400;
     font-family: sans-serif;
     font-family: "Alkatra", system-ui;
     font-optical-sizing: auto;
@@ -626,14 +624,11 @@ section {
   margin-right: 10px;
 }
 
-.about .content ul .item {
-  margin-right: 10px;
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
   color: var(--secondary-color);
   line-height: 0;
-  width: 10px;
-  height: 10px;
-  background: var(--secondary-color);
-  border-radius: 50px;
 }
 
 .about .content p:last-child {
@@ -698,6 +693,14 @@ section {
     border-radius: 4px;
   }
 
+}
+
+.about .item{
+  width: 10px;
+  height: 10px;
+  background: var(--secondary-color);
+  border-radius: 50px;
+  margin-right: 20px;
 }
 
 .about .skills-content {
@@ -844,10 +847,9 @@ section {
 }
 
 .services .icon-box:hover{
-  transform: scale(1.03);
+  transform: scale(1.02);
   border: 1px solid var(--secondary-color);
   cursor: pointer;
-  background: #141b27ef;
 }
 
 .services .icon {
@@ -889,7 +891,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/testimonials/breadcrumbs-bg.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/1.gif") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
