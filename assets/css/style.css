@@ -114,10 +114,10 @@ body {
   padding: 0 2rem;
 }
 
-.logo{
+.logo h1{
   color: var(--primary-color);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .logo span{
@@ -254,6 +254,10 @@ body {
   .navbar ul {
     display: none;
   }
+
+  .logo{
+    margin-left: -20px;
+  }
 }
 
 .navbar-mobile {
@@ -271,7 +275,7 @@ body {
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 10px;
 }
 
 .navbar-mobile ul {
@@ -340,7 +344,6 @@ body {
   display: block;
 }
 
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -379,7 +382,7 @@ body {
   margin: 0 0 10px 0;
   font-size: 64px;
   color: var(--primary-color);
-  font-weight: 400;
+  font-weight: 600;
   font-family: sans-serif;
   font-family: "Alkatra", system-ui;
   font-optical-sizing: auto;
@@ -390,7 +393,7 @@ body {
     margin: 0 0 10px 0;
     font-size: 24px;
     color: var(--primary-color);
-    font-weight: 400;
+    font-weight: 600;
     font-family: sans-serif;
     font-family: "Alkatra", system-ui;
     font-optical-sizing: auto;
@@ -433,6 +436,11 @@ body {
   bottom: 8px;
   color: rgb(13, 143, 13);
   transition: .5s ease;
+}
+
+#hero .bi-whatsapp {
+  transition: 0.4s;
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
 
 @media (min-width: 1024px) {
@@ -618,11 +626,14 @@ section {
   margin-right: 10px;
 }
 
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
+.about .content ul .item {
+  margin-right: 10px;
   color: var(--secondary-color);
   line-height: 0;
+  width: 10px;
+  height: 10px;
+  background: var(--secondary-color);
+  border-radius: 50px;
 }
 
 .about .content p:last-child {
@@ -716,14 +727,14 @@ section {
 }
 
 .about .skills-content .progress-bar-wrap {
-  background: var(--bg-color);
+  background: var(--primary-color);
 }
 
 .about .skills-content .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--sky-blue);
+  background-color: var(--secondary-color);
 }
 
 /*--------------------------------------------------------------
@@ -796,7 +807,7 @@ section {
   left: -9px;
   top: 0;
   background: var(--resume-bg);
-  border: 2px solid #82909c;
+  border: 2px solid var(--secondary-color);
 }
 
 .col-lg-6 .btn button[type=submit] {
@@ -833,9 +844,10 @@ section {
 }
 
 .services .icon-box:hover{
-  transform: scale(1.1);
-  border: 1px solid var(--sky-blue);
+  transform: scale(1.03);
+  border: 1px solid var(--secondary-color);
   cursor: pointer;
+  background: #141b27ef;
 }
 
 .services .icon {
@@ -877,7 +889,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/1.gif") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/testimonials/breadcrumbs-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1299,13 +1311,13 @@ section {
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #687683;
+  color: var(--secondary-color);
   line-height: 1;
   margin: 0 8px;
   transition: 0.3s;
   padding: 14px;
   border-radius: 50px;
-  border: 1px solid #dde1e4;
+  border: 1px solid var(--secondary-color);
 }
 
 .contact .social-links a:hover {
@@ -1410,7 +1422,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/My\ Photo.jpeg") top center no-repeat;
   background-size: cover;
   color: var(--primary-color);
   font-size: 14px;
