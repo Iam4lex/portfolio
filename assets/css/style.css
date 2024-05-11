@@ -436,11 +436,6 @@ body {
   transition: .5s ease;
 }
 
-#hero .bi-whatsapp {
-  transition: 0.4s;
-  animation: up-down 1s ease-in-out infinite alternate-reverse both;
-}
-
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
