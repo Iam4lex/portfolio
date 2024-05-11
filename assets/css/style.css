@@ -436,6 +436,11 @@ body {
   transition: .5s ease;
 }
 
+.bi-whatsapp {
+  transition: 0.4s;
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -1010,6 +1015,12 @@ section {
   border: 2px solid var(--primary-color);
 }
 
+@media screen and (max-width: 500px) {
+  .portfolio #portfolio-flters li {
+    font-size: 8px;
+  }
+}
+
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: var(--secondary-color);
@@ -1447,7 +1458,8 @@ section {
   font-weight: 700;
   color: var(--primary-color);
   position: relative;
-  font-family: "Satisfy", serif;
+  font-family: sans-serif;
+  font-family: "Alkatra", system-ui;
   padding: 0;
   margin: 0 0 15px 0;
 }
