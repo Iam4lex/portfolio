@@ -30,19 +30,6 @@
     }
   }
 
-  // Typing listener
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
 
   /**
    * Easy on scroll event listener 
@@ -263,21 +250,6 @@
 
 })()
 
-const titles = ["Web Developer", "Web Designer", "Cyber Security Enthusiast"];
-const typingSpeed = 100; // in milliseconds
-let titleIndex = 0;
-let letterIndex = 0;
-
-const typingInterval = setInterval(() => {
-    document.getElementById("typing-text").textContent += titles[titleIndex][letterIndex];
-    letterIndex++;
-    if (letterIndex === titles[titleIndex].length) {
-        clearInterval(typingInterval);
-        setTimeout(() => {
-            eraseTitle();
-        }, 1000); // Delay before erasing title
-    }
-}, typingSpeed);
 
 function eraseTitle() {
     const eraseInterval = setInterval(() => {

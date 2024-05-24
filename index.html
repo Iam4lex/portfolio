@@ -32,7 +32,7 @@
 </head>
 
 <body>
-
+  
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
 
@@ -45,8 +45,9 @@
         <li><a class="nav-link scrollto" href="#about">About</a></li>
         <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
         <li><a class="nav-link scrollto" href="#services">Services</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
         <li class="dropdown"><a href="#testimonials"><span>Testimonials</span></a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+        <li class="dropdown"><a href="#featured-services"><span>Skills</span></a></li>
         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -58,7 +59,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" >
     <div class="hero-container">
-      <div id="typing-text"></div>
+      <div class="typing-text"></div>
       <br>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
@@ -473,90 +474,98 @@
       </div>
     </section><!-- End My Portfolio Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
+       <!-- ======= Skills Section ======= -->
+       <section id="featured-services" class="featured-services">
 
         <div class="section-title">
-          <span>Pricing</span>
-          <h2>Pricing</h2>
-          <p>Our comprehensive range of services caters to diverse needs, ensuring robust cybersecurity measures and optimized web solutions</p>
+          <span>Skills</span>
+          <h2>Skills</h2>
+          <p style="color: #c0c0c0;">Web Developer and Cyber Security Enthusiast</p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box">
-              <h3>Penetration Testing Services</h3>
-              <h4><sup>$</sup>500+<span> / month</span></h4>
-              <ul>
-                <li>Basic Package</li>
-                <li>Standard Package</li>
-                <li>Advanced Package</li>
-                <li class="na">Customized Package</li>
-                <li class="na">Basic Package</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Hire Me</a>
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-bootstrap"></i></div>
+                <h4><a href="" class="stretched-link">Bootstrap</a></h4>
+                <p>Utilizing front-end framework for responsive and mobile-first web development.</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                <h4><a href="" class="stretched-link">Penetration Testing</a></h4>
+                <p>Skill in popular content management system for website creation.</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-wordpress"></i></div>
+                <h4><a href="" class="stretched-link">Wordpress</a></h4>
+                <p>Mastery of scripting language for web development and interactivity.</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-filetype-js"></i></div>
+                <h4><a href="" class="stretched-link">JavaScript</a></h4>
+                <p>Identifying vulnerabilities in systems to enhance cybersecurity measures.</p>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured">
-              <h3>Web Application Development:</h3>
-              <h4><sup>$</sup>300+<span> / month</span></h4>
-              <ul>
-                <li>Simple Website</li>
-                <li>Medium-Sized Web Application</li>
-                <li>Complex Web Application</li>
-                <li>E-commerce Platform</li>
-                <li class="na">E-commerce Websites</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Hire Me</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <h3>Security Awareness Training</h3>
-              <h4><sup>$</sup>290+<span> / month</span></h4>
-              <ul>
-                <li>Standard Training Session</li>
-                <li>Customized Training Program</li>
-                <li>Annual Subscription for Online Training</li>
-                <li>Enterprise-Level Training Package</li>
-                <li>Security training</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Hire Me</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Cyber Incident Response</h3>
-              <h4><sup>$</sup>490+<span> / month</span></h4>
-              <ul>
-                <li>Initial Consultation</li>
-                <li>Incident Analysis and Response</li>
-                <li>Ongoing Incident Response Retainer</li>
-                <li>Customized Incident Response Plan</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Hire Me</a>
-              </div>
-            </div>
-          </div>
-
+  
         </div>
+      </section>
+      
+      <section id="featured-services" class="featured-services">
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-code-slash"></i></div>
+                <h4><a href="" class="stretched-link">React</a></h4>
+                <p>Competence in JavaScript library for building interactive UIs</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-pencil"></i></div>
+                <h4><a href="" class="stretched-link">Figma</a></h4>
+                <p>Proficiency in design tool for web and UI/UX projects.</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-palette"></i></div>
+                <h4><a href="" class="stretched-link">Web Design</a></h4>
+                <p>Creation of visually appealing and user-friendly websites.</p>
+              </div>
+            </div>
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-wifi"></i></div>
+                <h4><a href="" class="stretched-link">Networking</a></h4>
+                <p>Understanding of network fundamentals like TCP/IP, DNS.</p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
 
-      </div>
-    </section><!-- End Pricing Section -->
+      <!-- End Kills Section -->
 
     <!-- ======= Contact Me Section ======= -->
     <section id="contact" class="contact">
@@ -665,6 +674,13 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -686,8 +702,18 @@
         window.open(whatsappLink, '_blank');
     }
   </script>
+
+  <!-- Typing text  -->
+  <script>
+    var typed = new Typed('.typing-text', {
+      strings: ['Web Developer', 'Web Designer', 'Penetration Testing'],
+      typeSpeed: 50,
+      loop: true,
+      backDelay: 1500,
+      smartBackspace: false
+    });
+  </script>
     
-</script>
 </body>
 
 </html>
