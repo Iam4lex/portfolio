@@ -387,7 +387,7 @@ body {
 }
 
 @media screen and (max-width:560px) {
-  #hero #typing-text {
+  #hero .typing-text {
     margin: 0 0 10px 0;
     font-size: 24px;
     color: var(--primary-color);
